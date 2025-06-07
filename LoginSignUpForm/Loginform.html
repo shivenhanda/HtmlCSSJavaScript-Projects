@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="Loginform.css">
+</head>
+
+<body>
+    <header><h1>Login / SignUp Website</h1></header>
+    <nav>
+        <a href="Loginform.html">Login Form</a>
+        <a href="SignUp.html">SignUp Form</a>
+    </nav>
+    <div id="container">
+    <div class="box">
+        <h1>Login Form</h1>
+        <form id="loginForm">
+            <label for="username">Enter Your Name: </label>
+            <input type="text" placeholder="Name here" value="" id="username" name="username" autofocus required>
+            <label for="email">Enter Your Email:
+                <input type="email" placeholder="Email here" id="email" name="email" value="" required>
+            </label>
+            <label for="password">Enter Your Password:
+                <input type="password" placeholder="Password here" id="password" value="" name="password"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="12">
+            </label>
+            <label>
+                <input type="submit" id="submit" value="submit">
+                <input type="reset" id="reset" value="reset">
+            </label>
+        </form>
+    </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            window.alert("Login successful! (This is just frontend validation)");
+        });
+    </script>
+</body>
+
+</html>
