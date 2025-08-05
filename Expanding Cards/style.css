@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fecb49;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.5s all ease-in-out;
+}
+
+#image-1 {
+    width: 500px
+}
+
+@media (max-width:767px) {
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 50%;
+    }
+
+    #image-1 {
+        width: 100%;
+    }
+}
