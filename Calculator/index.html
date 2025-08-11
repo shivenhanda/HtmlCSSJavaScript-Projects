@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display" id="DisplayValue" readonly></div>
+        <div class="calculate">
+            <button class="btn operator" onclick="displayaction('+');">+</button>
+            <div class="btn btn7" onclick="displayaction('7');">7</div>
+            <div class="btn btn8" onclick="displayaction('8');">8</div>
+            <div class="btn btn9" onclick="displayaction('9');">9</div>
+            <div class="btn operator" onclick="displayaction('-');">-</div>
+            <div class="btn btn4" onclick="displayaction('4');">4</div>
+            <div class="btn btn5" onclick="displayaction('5');">5</div>
+            <div class="btn btn6" onclick="displayaction('6');">6</div>
+            <div class="btn operator" onclick="displayaction('*');">*</div>
+            <div class="btn btn1" onclick="displayaction('1');">1</div>
+            <div class="btn btn2" onclick="displayaction('2');">2</div>
+            <div class="btn btn3" onclick="displayaction('3');">3</div>
+            <div class="btn operator" onclick="displayaction('/');">/</div>
+            <div class="btn btn0" onclick="displayaction('0');">0</div>
+            <div class="btn btn10" onclick="displayaction('.');">.</div>
+            <div class="btn btn11" onclick="calculate();">=</div>
+            <div class="btn operator" onclick="clearDisplay('C');">C</div>
+        </div>
+    </div>
+    <div>
+        <p>Or click from keyboard</p>
+        <div id="keyOverlay"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
