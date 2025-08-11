@@ -5,12 +5,10 @@ function displayaction(input) {
 }
 function clearDisplay(input) {
     display.innerText = "";
-    console.log(display)
 }
 function calculate() {
     try {
         display.innerText = eval(display.innerText);
-        console.log(display.innerText);
     }
     catch (error) {
         display.innerText = "Error";
