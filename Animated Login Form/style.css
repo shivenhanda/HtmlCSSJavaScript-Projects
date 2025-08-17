@@ -1,0 +1,92 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151f28;
+}
+.box{
+    width: 380px;
+    height:400px;
+    background-color: #1c1c1c;
+    position:relative;
+    border-radius: 10px;
+}
+.box form{
+    position:absolute;
+    inset:4px;
+    background-color: #222222;
+    border-radius: 10px;
+    padding:50px 40px;
+}
+.box form h2{
+    text-align:center;
+    margin-bottom: 10px;
+    color:white;
+    letter-spacing: 1px;
+    font-weight:500;
+    font-size:25px;
+    z-index: 2;
+}
+.inputBox input{
+    width:100%;
+    padding:5px;
+    font-size: 1.2em;
+}
+.inputBox{
+    position:relative;
+    margin-top:25px;
+}
+.inputBox label{
+    position:absolute;
+    left:6px;
+    top:1px;
+    color:black;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.inputBox input:valid+label,
+.inputBox input:focus+label{
+    transform:translateX(10px) translateY(-15px);
+    font-size:0.65em;
+    padding:0 10px;
+    background:#222222;
+    letter-spacing: 0.2em;
+    outline:0;
+    color:orange;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
+}
+.inputBox:nth-child(2) input:focus + span,
+.inputBox:nth-child(2) input:valid + span{
+    color:black;
+    background-color: #57d1d1;
+    border-radius: 2px;
+}
+.inputBox input:focus,
+.inputBox input:valid {
+    border:1px solid #222222;
+}
+.links{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:20px;
+}
+a{
+    color:aqua;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+button{
+    font-size: 1.2em;
+    padding:5px;
+    border-radius: 10px;
+}
