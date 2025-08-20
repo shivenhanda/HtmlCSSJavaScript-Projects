@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: rgb(226, 244, 92);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 600px;
+}
+
+label {
+    text-align: center;
+    font-weight: bold;
+}
+
+input {
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+span {
+    text-align: center;
+}
+
+.container .person {
+    display: none;
+}
+
+.container .person.show {
+    display: block;
+}
