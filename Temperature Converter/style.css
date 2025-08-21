@@ -1,0 +1,30 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color:#FFD700;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+label{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    width:250px;
+    padding:5px;
+    border:2px solid black;
+    border-radius:5px;
+}
