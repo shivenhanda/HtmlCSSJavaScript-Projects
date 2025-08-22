@@ -1,0 +1,36 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    ;
+}
+
+.container {
+    width: 500px;
+    max-width: 500px;
+    height: 300px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 50px;
+    background-color: transparent;
+}
+
+h2,
+label,
+span {
+    text-align: center;
+}
+
+input {
+    width: 250;
+    padding: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+}
