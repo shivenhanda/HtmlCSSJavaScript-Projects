@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: linear-gradient(0deg,rgba(139, 195, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);;
+}
+input{
+    margin:10px;
+    width:350px;
+    padding:10px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+}
