@@ -1,0 +1,28 @@
+body{
+    display:flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:aquamarine;
+}
+*{
+    cursor:pointer;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.taskfunction{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+.completed {
+  text-decoration: line-through;
+}
+button,input{
+    padding:5px;
+}
