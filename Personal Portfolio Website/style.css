@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+nav .a {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+nav .a a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav .logo p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #551A8B;
+}
+
+main {
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    padding: 10px;
+    padding-left: 0;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact,
+#text {
+    display: flex;
+    flex-direction: column;
+}
+
+main #text .box {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+main #text .box p {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label {
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+    width: 290px;
+    margin-bottom: 5px;
+}
+
+.projects {
+    grid-column: span 2;
+}
+
+.project,
+.p {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 5px;
+}
+
+.project .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project .box1,
+.project .box2,
+.project .box3 {
+    display: inline-block;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+#Contact textarea {
+    resize: none;
+}
+a{
+    color:blue;
+}
+footer {
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+@media screen and (max-width: 800px) {
+    main{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    main section{
+        height:200px;
+    }
+    main #text,form{
+        display:flex;
+        justify-content: center;
+    }
+    main #text p,main #text h2{
+        text-align: center;
+    }
+}
+img{
+    width:250px;
+    height:250px; 
+}
+img:hover{
+    filter:drop-shadow(10px 10px 7px orange) drop-shadow(-10px 10px 7px orange);
+}
+main #text .box p:hover,.box1:hover{
+    color:red;
+}
+.box1 a{
+    text-decoration: none;
+}
