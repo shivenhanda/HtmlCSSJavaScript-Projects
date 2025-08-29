@@ -1,0 +1,40 @@
+.quizquestion,.questions,.quiz{
+    display:none;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+input{
+    padding:10px;
+    width:300px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+button{
+    padding:5px 10;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+.show{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-direction: column;
+}
+#answerbyuser{
+    color:black;
+}
+.nodisplay{
+    display:none;
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+    color:black;
+}

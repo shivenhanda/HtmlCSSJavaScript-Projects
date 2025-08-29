@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Quiz Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quizquestion">
+        <div class="inputbox">
+            <input type="number" name="quiznumber" id="quiznumber" placeholder="Enter your number of Quiz you want: " required>
+        </div>
+        <div class="buttons">
+            <button onclick="savequestionnumber();">Save</button>
+        </div>
+    </div>
+    <div class="questions">
+        <input type="text" name="" id="questionvalue" placeholder="Enter your question:">
+        <input type="text" name="" id="option1value" placeholder="Enter your option 1 : ">
+        <input type="text" name="" id="option2value" placeholder="Enter your option 2 :">
+        <input type="text" name="" id="option3value" placeholder="Enter your option 3 :">
+        <input type="text" name="" id="option4value" placeholder="Enter your option 4 :">
+        <input type="number" name="" id="answervalue" placeholder="Enter Answer option : ">
+        <button onclick="savequestionvalue();">Save</button>
+        <p id="errormessage"></p>
+    </div>
+    <div class="quiz">
+        <h1 id="question"></h1>
+        <p id="option1" value="1"></p>
+        <p id="option2" value="2"></p>
+        <p id="option3" value="3"></p>
+        <p id="option4" value="4"></p>
+        <input type="number" name="" id="answer">
+        <button id="submit">Submit</button>
+        <h2 id="answerbyuser"></h2>
+        <button class="nodisplay"><a href="index.html">Restart Quiz</a></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
