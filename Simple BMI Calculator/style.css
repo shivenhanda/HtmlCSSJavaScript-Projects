@@ -1,0 +1,74 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #312d2d;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+h1,p{
+    text-align: center;
+}
+.inputBox{
+    position:relative;
+    width:250px;
+}
+.inputBox input{
+    width:100%;
+    padding:10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    outline:none;
+}
+.inputBox span{
+    position:absolute;
+    left:10px;
+    top:10px;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition:0.5s;
+    pointer-events: none;
+
+}
+.inputBox input:valid+span,
+.inputBox input:focus+span{
+    font-size: 0.75em;
+    transform:translateX(3px)translateY(-30px);
+    background-color: #312d2d;
+    color:#f1f1f1;
+    padding:0 10px;
+    letter-spacing: 0.2em;
+}
+p{
+    color:#f1f1f1;
+}
+a{
+    font-size: 13.333px;
+    font-family: Arial;
+    text-decoration: none;
+    appearance: auto;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
