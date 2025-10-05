@@ -6,6 +6,8 @@ document.getElementById("submit").onclick=function(){
     height=document.getElementById("height").value;
     if(weight=="" || height==""){
         document.getElementById("bmi").innerHTML="Please Write the Correct Information";
+        document.getElementById("bmi1").innerHTML="";
+        document.getElementById("bmi2").innerHTML="";
         return;
     }
     height=height/100;
