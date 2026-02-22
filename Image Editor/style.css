@@ -1,0 +1,115 @@
+:root{
+    --bg-color:rgba(17,17,17);
+    --bg-danger-color:rgb(216, 40, 40);
+    --bg-success-color:rgb(18, 202, 45);
+    --bg-secondary-color:rgb(70, 70, 70);
+    --text-primary-color:#fff;
+    --text-active-color:rgb(0, 0, 0);
+}
+body{
+    background-color: var(--bg-color);
+    color:var(--text-primary-color);
+}
+main section{
+    display: flex;
+    gap:10px;
+    padding:3rem;
+}
+main section .left{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    width:70%;
+}
+main section .right{
+    width:30%;
+}
+main section .top{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+main section .bottom{
+    background-color: var(--bg-secondary-color);
+    width: 100%;
+    aspect-ratio: 3/1.2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section .bottom .placeholder{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+    opacity: 0.6;
+}
+.btn{
+    padding:10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor:pointer;
+    color:var(--text-active-color);
+}
+#resetBtn{
+    background-color: var(--bg-danger-color);
+    color:var(--text-primary-color);
+}
+#downloadBtn{
+    background-color: var(--bg-success-color);
+    color:var(--text-primary-color);
+}
+i{
+    font-size: 10rem;
+}
+main section .right{
+    background-color: var(--bg-secondary-color);
+    border-radius: 5px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+main section .right .filters{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.filter input{
+    width:100%;
+    outline: none;
+    appearance: none;
+}
+.filter input::-webkit-slider-runnable-track{
+    background-color: var(--text-primary-color);
+    height:3px;
+}
+.filter input::-webkit-slider-thumb{
+    cursor: pointer;
+    appearance: none;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: -8.5px;
+}
+canvas{
+    max-width: 600px;
+    max-height: 800px;
+}
+
+@media (max-width:600px){
+    main section{
+        display: flex;
+        flex-direction: column;
+    }
+    main section .left,main section .right{
+        width:100%;
+    }
+}
